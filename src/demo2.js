@@ -19,3 +19,5 @@ function findHighestWord(essay){
   }
   return max;
 }
+
+export default findHighestWord;

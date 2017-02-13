@@ -11,4 +11,4 @@ function mask(dom, opacity){
   dom.parentNode.insertBefore(_dom,dom);
 }
 
-export default mask;
+module.exports = mask;

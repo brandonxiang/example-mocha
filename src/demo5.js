@@ -38,3 +38,6 @@ function F(){
 F.prototype = Person.prototype;
 Teacher.prototype = new F();
 Teacher.prototype.constructor = Teacher;
+
+exports.Person = Person;
+exports.Teacher = Teacher;

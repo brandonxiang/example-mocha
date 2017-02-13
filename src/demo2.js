@@ -20,4 +20,4 @@ function findHighestWord(essay){
   return max;
 }
 
-export default findHighestWord;
+module.exports = findHighestWord;

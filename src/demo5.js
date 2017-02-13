@@ -31,13 +31,14 @@ function Teacher(props){
   }
 }
 
-
-function F(){
+function inherits(Child,Parent){
+  var F = function(){};
+  F.prototype =Parent.prototype;
+  Child.prototype = new F();
+  Child.prototype.constructor = Child;
 }
 
-F.prototype = Person.prototype;
-Teacher.prototype = new F();
-Teacher.prototype.constructor = Teacher;
+inherits(Teacher, Person);
 
 exports.Person = Person;
 exports.Teacher = Teacher;

@@ -1,3 +1,1 @@
 var essay = "When Donald Trump became president of the United States, many thought his off-the-cuff tweeting days were over. Surely he would adopt the seriousness of his new role as leader of the free world and apply more discretion over what he says on social media. It seems, however, that he hasn't. In the past month, he has used Twitter as a platform to shout down federal judges, complain about Saturday Night Live and launch endless attacks on the media. On Wednesday morning, the President once again went on Twitter to air his grievances, but this time, he took aim at Nordstrom. He said";
-
-var 

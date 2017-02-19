@@ -1,3 +1,4 @@
+//http://www.cnblogs.com/kindofblue/p/4672129.html
 function sumString(a,b){
     var result = [], count = 0
 

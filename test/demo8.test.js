@@ -1,4 +1,5 @@
-var sumString = require('../src/demo8.js')
+var sumString = require('../src/demo8.js').sumString
+var addString = require('../src/demo8.js').addString
 var expect = require('chai').expect
 
 describe('Demo 8', function(){
@@ -8,5 +9,9 @@ describe('Demo 8', function(){
 
     it('sums up two small string', function(){
         expect(sumString(a,b)).to.be.equal(c)
+    })
+
+    it('add up two small string', function(){
+      expect(addString(a,b)).to.be.equal(c)
     })
 })

@@ -1,3 +1,5 @@
+http://www.cnblogs.com/hyddd/archive/2009/04/09/1432744.html
+
 CSRF（Cross-site request forgery）跨域请求伪造，又叫one click attack或session riding。
 
 XSS利用站点内的信任用户。

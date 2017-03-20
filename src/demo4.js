@@ -9,4 +9,7 @@ function reUrl(url){
 }
 
 
-module.exports = reUrl
+module.exports = {
+    reLocation:reLocation,
+    reUrl:reUrl
+}

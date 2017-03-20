@@ -1,5 +1,5 @@
 var expect = require('chai').expect
-var reUrl = require('../src/demo4')
+var reUrl = require('../src/demo4').reUrl
 
 
 describe('Demo 4', function(){

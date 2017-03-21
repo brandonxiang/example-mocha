@@ -1,11 +1,15 @@
 var expect = require('chai').expect
 var Person = require('../src/demo5').Person
 var Teacher = require('../src/demo5').Teacher
+var Man = require('../src/demo5').Man
+var Student = require('../src/demo5').Student
 
 describe('Demo 5', function(){
 
     var brandon = new Person({name:'brandon',age:25})
     var robin = new Teacher({name:'robin',age:26, studentCount:50})
+    var martin = new Man()
+    var tom = new Student()
 
     it('creates an object with name',function(){
         expect(brandon.name).to.be.equal('brandon')
@@ -40,5 +44,8 @@ describe('Demo 5', function(){
         expect(robin).to.be.an.instanceof(Person)
     })
 
-
+    it('create a male student', function(){
+        expect(martin.getSex()).to.be.equal('male')
+        expect(tom.getSex()).to.be.equal('male')
+    })
 })

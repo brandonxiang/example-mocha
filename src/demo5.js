@@ -31,5 +31,32 @@ function inherits(Child,Parent){
 
 inherits(Teacher, Person)
 
+function Man(){
+    var sex = 'male'
+
+    this.setSex = function(_sex){
+        sex = _sex
+    }
+
+    this.getSex = function(){
+        return sex
+    }
+}
+
+function Student(){
+    Person.call(this)
+    Man.call(this)
+}
+
+for(var i in Person.prototype){
+    Student.prototype[i] = Person.prototype[i]
+}
+for(var i in Man.prototype){
+    Student.prototype[i] = Man.prototype[i]
+}
+
+
 exports.Person = Person
 exports.Teacher = Teacher
+exports.Student = Student
+exports.Man = Man
